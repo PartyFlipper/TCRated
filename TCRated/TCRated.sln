@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCRated", "TCRated\TCRated.csproj", "{F3BE43BF-4E49-4253-9D97-28B498931BDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3BE43BF-4E49-4253-9D97-28B498931BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BE43BF-4E49-4253-9D97-28B498931BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BE43BF-4E49-4253-9D97-28B498931BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BE43BF-4E49-4253-9D97-28B498931BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
