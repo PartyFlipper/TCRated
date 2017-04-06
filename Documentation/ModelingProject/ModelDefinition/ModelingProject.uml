@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="2c8ef2bd-e48d-4210-8123-c703bc07a2b7"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,658 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="adf65543-0e3d-402d-8399-7d9890a8f2e5"
+        name="Student (ingelogd)"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="71bb559b-567b-4764-a863-2fdd7d4a4bb4"
+            isDerived="false"
+            sourceEndRoleName="Leerling"
+            targetEndRoleName="Inloggen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="78010622-87fc-47f3-adb4-ef82af5edcce"
+              LastKnownName="Inloggen"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ceb4044b-1683-4a47-8de3-9d85351a9a0d"
+                  name="Leerling"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="014bc11c-1347-4eec-ae07-61b9d02ae778"
+                  name="Inloggen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1789fa32-2fdc-4423-a995-e91ce050f76c"
+            isDerived="false"
+            sourceEndRoleName="Leerling"
+            targetEndRoleName="Lesrooster bekijken"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b864e809-0f51-480f-8ece-0d25ced2cc9f"
+              LastKnownName="Lesrooster bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e0e02db9-1c74-406d-8907-1ccc8200311a"
+                  name="Leerling"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6c7ea53-7c95-4b93-8143-a2452a7a301e"
+                  name="Lesrooster bekijken"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="df7f1d6c-9c1e-4851-9e46-64571663ef72"
+            isDerived="false"
+            sourceEndRoleName="Student (ingelogd)"
+            targetEndRoleName="Uitloggen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="99259867-0cbc-4a20-8e00-3689020ce1bd"
+              LastKnownName="Uitloggen"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5eed183-b140-4b1d-b976-efd829c9756a"
+                  name="Student (ingelogd)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50955911-8bd5-44ed-b533-cd1ce8a5642d"
+                  name="Uitloggen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0be2db11-ffbc-4100-9d61-fe9af3f7b69f"
+            isDerived="false"
+            sourceEndRoleName="Student (ingelogd)"
+            targetEndRoleName="Les beoordelen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7b384979-d77a-48df-8f34-5068937e9968"
+              LastKnownName="Les beoordelen"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="795c2296-d26d-43bd-b493-5d08efe98f69"
+                  name="Student (ingelogd)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="237e35d2-024b-4b63-b9bd-4cd625d76532"
+                  name="Les beoordelen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3f4427ff-0398-4b6f-80a5-62c5a0535f93"
+            isDerived="false"
+            sourceEndRoleName="Student (ingelogd)"
+            targetEndRoleName="Beoordeelde les bekijken"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="da845b6c-8fa7-40fa-86b2-662e633e0749"
+              LastKnownName="Beoordeelde les bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d90b176-6560-4f01-8546-0cb85c71cb6b"
+                  name="Student (ingelogd)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99748f4d-1796-4a1e-9c28-68228084297d"
+                  name="Beoordeelde les bekijken"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6835b2a8-612c-4c4c-a862-64366c8d15a5"
+        name="Docent"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0fe6dec7-7cab-44cd-b170-8c61c1959e3b"
+            isDerived="false"
+            sourceEndRoleName="Docent"
+            targetEndRoleName="Inloggen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="78010622-87fc-47f3-adb4-ef82af5edcce"
+              LastKnownName="Inloggen"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f4f86b3-3ae5-4215-8aa9-8ae0ae321ff7"
+                  name="Docent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e82515f-a55c-47ed-998c-6be9fe56fa71"
+                  name="Inloggen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6c54fc1a-fb12-453d-99d9-71125f0fc7d8"
+            isDerived="false"
+            sourceEndRoleName="Docent"
+            targetEndRoleName="Lesrooster bekijken"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b864e809-0f51-480f-8ece-0d25ced2cc9f"
+              LastKnownName="Lesrooster bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c8fd312-12eb-4e3e-9f0f-402a44d629ed"
+                  name="Docent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1f5b602-5aff-4d76-a0d5-e49f6b6bec4f"
+                  name="Lesrooster bekijken"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e2b77b04-020b-4f78-bccc-659919edd613"
+            isDerived="false"
+            sourceEndRoleName="Docent"
+            targetEndRoleName="Beoordeelde lessen bekijken"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="da845b6c-8fa7-40fa-86b2-662e633e0749"
+              LastKnownName="Beoordeelde les bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc12d129-8bff-47f3-ae3c-a2ce70ab70cb"
+                  name="Docent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc0d2cbe-ab39-4be5-a1ef-0b274c02b8b3"
+                  name="Beoordeelde lessen bekijken"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78010622-87fc-47f3-adb4-ef82af5edcce"
+        name="Inloggen"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="35557c56-a0c4-4c10-ab5b-62d10a8200cd">
+            <useCaseMoniker
+              Id="b864e809-0f51-480f-8ece-0d25ced2cc9f"
+              LastKnownName="Lesrooster bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+          <include
+            Id="a38292de-594b-4520-b9a2-cc8e5be7eaea">
+            <useCaseMoniker
+              Id="99259867-0cbc-4a20-8e00-3689020ce1bd"
+              LastKnownName="Uitloggen"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b864e809-0f51-480f-8ece-0d25ced2cc9f"
+        name="Lesrooster bekijken"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e01f18d1-05d5-460f-af62-3dd865bc2f04">
+            <useCaseMoniker
+              Id="7b384979-d77a-48df-8f34-5068937e9968"
+              LastKnownName="Les beoordelen"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4ec1de43-f19a-4f06-a0fb-a2a1516fb7fc"
+        name="API"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="da845b6c-8fa7-40fa-86b2-662e633e0749"
+        name="Beoordeelde les bekijken"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7b384979-d77a-48df-8f34-5068937e9968"
+        name="Les beoordelen"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5ca99858-cf68-49d9-9489-ec7c34996e7f">
+            <useCaseMoniker
+              Id="da845b6c-8fa7-40fa-86b2-662e633e0749"
+              LastKnownName="Beoordeelde les bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="99259867-0cbc-4a20-8e00-3689020ce1bd"
+        name="Uitloggen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="db1286bd-0d51-45ef-9a17-065bc758da1a"
+        name="Docent (ingelogd)"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="549a77c2-c853-4705-a473-66b446c374cb"
+            isDerived="false"
+            sourceEndRoleName="Leerling"
+            targetEndRoleName="Lesrooster bekijken"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="899c1b16-54ac-4063-a3f7-870abe4e4b9b"
+              LastKnownName="Lesrooster bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c3afd07-649e-4926-8dcc-b188e21824be"
+                  name="Leerling"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e0cf405a-fb8a-467f-a3c1-d4162116a30a"
+                  name="Lesrooster bekijken"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f33a4ae2-66ae-419f-9913-03174700a26b"
+            isDerived="false"
+            sourceEndRoleName="Student (ingelogd)"
+            targetEndRoleName="Uitloggen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4d601386-f354-464f-917d-1540ae89913f"
+              LastKnownName="Uitloggen"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf2a99a1-6ba1-4734-81b7-174dfbc2b905"
+                  name="Student (ingelogd)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ebb9de4-bd18-4dba-b4b9-41600073751a"
+                  name="Uitloggen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8acccd6d-521a-4ce4-ab6a-005ed6bea497"
+            isDerived="false"
+            sourceEndRoleName="Student (ingelogd)"
+            targetEndRoleName="Les beoordelen"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9af612da-5e51-4525-a073-1cdfc396a49d"
+              LastKnownName="Les beoordelen"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c08dd4f-7fc4-451d-87a2-c9c6567b9777"
+                  name="Student (ingelogd)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44129285-9a45-4d5f-bd19-2d43a2b22846"
+                  name="Les beoordelen"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7fa53276-94f3-445d-8fc5-649a97663240"
+            isDerived="false"
+            sourceEndRoleName="Student (ingelogd)"
+            targetEndRoleName="Beoordeelde les bekijken"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="23b6f7ad-5357-4447-b5e0-0b43055b59af"
+              LastKnownName="Beoordelingen bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8392fbb4-3121-4577-93e3-453662ebdcf3"
+                  name="Student (ingelogd)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35a78098-0a17-4dff-997d-e0efbb3d392e"
+                  name="Beoordeelde les bekijken"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="899c1b16-54ac-4063-a3f7-870abe4e4b9b"
+        name="Lesrooster bekijken"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="639788be-d5e3-4a1b-8d0e-3b8ad1a2214c">
+            <useCaseMoniker
+              Id="9af612da-5e51-4525-a073-1cdfc396a49d"
+              LastKnownName="Les beoordelen"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+          <include
+            Id="7e4ca6d5-35a8-482c-bb89-95e2be6787de">
+            <useCaseMoniker
+              Id="23b6f7ad-5357-4447-b5e0-0b43055b59af"
+              LastKnownName="Beoordelingen bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="23b6f7ad-5357-4447-b5e0-0b43055b59af"
+        name="Beoordelingen bekijken"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9af612da-5e51-4525-a073-1cdfc396a49d"
+        name="Les beoordelen"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1ebd1ae0-2ca9-4798-9dc0-6b6f7c620647">
+            <useCaseMoniker
+              Id="23b6f7ad-5357-4447-b5e0-0b43055b59af"
+              LastKnownName="Beoordelingen bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4d601386-f354-464f-917d-1540ae89913f"
+        name="Uitloggen"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
