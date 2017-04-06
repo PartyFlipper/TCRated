@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="08f48815-71da-41c2-b713-8fee92de2f6a" name="UseCaseDiagram" linkedPackageId="93ceb2d2-a122-46d4-945e-50fbec751081" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="7991f176-3869-44f3-a585-9a0a9b830f87">
+      <profileInstance Id="c007751a-fc66-4d04-8520-6bb47b0de14f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c6eb3a1e-c624-4733-9190-bd9f00ed93f5">
+      <profileInstance Id="acf01809-297e-4cae-b106-2d437c736e21" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7d40665a-457c-4746-8b09-256669bc9d85" name="Student (ingelogd)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="adf65543-0e3d-402d-8399-7d9890a8f2e5" />
+        <targetEnds>
+          <association Id="182a6c38-0935-4382-858c-c27c6f5a9121" isDerived="false" sourceEndRoleName="Leerling" targetEndRoleName="Lesrooster bekijken" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="77d8b517-84cb-4378-873f-b455c7ee34d4" LastKnownName="Lesrooster bekijken" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f0d984a4-6cc3-419e-86d9-08ecdc5f92a9" name="Leerling" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e0e02db9-1c74-406d-8907-1ccc8200311a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd39eff5-f4e3-4f2c-b186-a4412e243b0f" name="Lesrooster bekijken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6c7ea53-7c95-4b93-8143-a2452a7a301e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1789fa32-2fdc-4423-a995-e91ce050f76c" />
+          </association>
+          <association Id="4cb5bfbd-a50b-4803-b33a-97d92f1c9f41" isDerived="false" sourceEndRoleName="Student (ingelogd)" targetEndRoleName="Uitloggen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="69497847-c3de-48e7-8ded-42dca9e79ff3" LastKnownName="Uitloggen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ebdcf33-f781-4ec2-a70b-314df8b3daf2" name="Student (ingelogd)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b5eed183-b140-4b1d-b976-efd829c9756a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69364301-7fd9-4ba4-9448-020d0f2a03dd" name="Uitloggen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="50955911-8bd5-44ed-b533-cd1ce8a5642d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="df7f1d6c-9c1e-4851-9e46-64571663ef72" />
+          </association>
+          <association Id="40cbb621-2cf4-4f7b-b2a0-0c63053f53ab" isDerived="false" sourceEndRoleName="Student (ingelogd)" targetEndRoleName="Les beoordelen" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="86e6df32-3aa7-4955-862d-383f737f6f22" LastKnownName="Les beoordelen" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="069de97f-c7b7-471a-8e69-bd0336e52ad3" name="Student (ingelogd)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="795c2296-d26d-43bd-b493-5d08efe98f69" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5167fa42-c556-4041-8220-b468b9ec49b3" name="Les beoordelen" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="237e35d2-024b-4b63-b9bd-4cd625d76532" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0be2db11-ffbc-4100-9d61-fe9af3f7b69f" />
+          </association>
+          <association Id="7c5627bd-09d0-4dec-bd5d-036e37318525" isDerived="false" sourceEndRoleName="Student (ingelogd)" targetEndRoleName="Beoordeelde les bekijken" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="51731bdc-64dd-4e8f-885a-68324373d479" LastKnownName="Beoordeelde les bekijken" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea2c2a2e-0e40-48a7-983d-a327a18d78a2" name="Student (ingelogd)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5d90b176-6560-4f01-8546-0cb85c71cb6b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33b99bf7-1dca-4e54-832a-05ad8a3e6683" name="Beoordeelde les bekijken" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="99748f4d-1796-4a1e-9c28-68228084297d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f4427ff-0398-4b6f-80a5-62c5a0535f93" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="77d8b517-84cb-4378-873f-b455c7ee34d4" name="Lesrooster bekijken" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b864e809-0f51-480f-8ece-0d25ced2cc9f" />
+        <additions>
+          <include Id="4a6595a3-b5a6-4aed-bc08-4253ca4d0cf1">
+            <useCaseMoniker Id="86e6df32-3aa7-4955-862d-383f737f6f22" LastKnownName="Les beoordelen" />
+            <elementDefinition Id="e01f18d1-05d5-460f-af62-3dd865bc2f04" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="51731bdc-64dd-4e8f-885a-68324373d479" name="Beoordeelde les bekijken" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da845b6c-8fa7-40fa-86b2-662e633e0749" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="86e6df32-3aa7-4955-862d-383f737f6f22" name="Les beoordelen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7b384979-d77a-48df-8f34-5068937e9968" />
+        <additions>
+          <include Id="0f6e1307-793b-4ca7-88ba-7cf434f1e9bc">
+            <useCaseMoniker Id="51731bdc-64dd-4e8f-885a-68324373d479" LastKnownName="Beoordeelde les bekijken" />
+            <elementDefinition Id="5ca99858-cf68-49d9-9489-ec7c34996e7f" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="69497847-c3de-48e7-8ded-42dca9e79ff3" name="Uitloggen" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99259867-0cbc-4a20-8e00-3689020ce1bd" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="93ceb2d2-a122-46d4-945e-50fbec751081" name="ModelingProject">
+    <elementDefinition Id="2c8ef2bd-e48d-4210-8123-c703bc07a2b7" />
+  </package>
+</useCaseModelRoot>

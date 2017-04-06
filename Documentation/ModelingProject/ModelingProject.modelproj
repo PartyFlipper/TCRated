@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <ProjectGuid>{583c65ed-3760-4501-b895-94a7fafc5a7e}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
     <Name>ModelingProject</Name>
     <RootNamespace>ModelingProject</RootNamespace>
@@ -22,6 +22,20 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Student.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Student.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Student.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Teacher.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Teacher.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Teacher.usecasediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ModelingProject.uml">
       <SubType>Content</SubType>
