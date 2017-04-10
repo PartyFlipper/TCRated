@@ -379,17 +379,7 @@
         Id="b864e809-0f51-480f-8ece-0d25ced2cc9f"
         name="Lesrooster bekijken"
         isAbstract="false"
-        isLeaf="false">
-        <additions>
-          <include
-            Id="e01f18d1-05d5-460f-af62-3dd865bc2f04">
-            <useCaseMoniker
-              Id="7b384979-d77a-48df-8f34-5068937e9968"
-              LastKnownName="Les beoordelen"
-              LastKnownLocation="ModelingProject.uml" />
-          </include>
-        </additions>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <actor
@@ -403,7 +393,17 @@
         Id="da845b6c-8fa7-40fa-86b2-662e633e0749"
         name="Beoordeelde les bekijken"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="522d420c-302c-40be-bdd8-8e3997d06c8b">
+            <useCaseMoniker
+              Id="7b384979-d77a-48df-8f34-5068937e9968"
+              LastKnownName="Les beoordelen"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -413,10 +413,10 @@
         isLeaf="false">
         <additions>
           <include
-            Id="5ca99858-cf68-49d9-9489-ec7c34996e7f">
+            Id="22d1c185-c8a2-44ba-a79a-07f5b09c9f7a">
             <useCaseMoniker
-              Id="da845b6c-8fa7-40fa-86b2-662e633e0749"
-              LastKnownName="Beoordeelde les bekijken"
+              Id="b864e809-0f51-480f-8ece-0d25ced2cc9f"
+              LastKnownName="Lesrooster bekijken"
               LastKnownLocation="ModelingProject.uml" />
           </include>
         </additions>
@@ -609,13 +609,6 @@
               LastKnownName="Les beoordelen"
               LastKnownLocation="ModelingProject.uml" />
           </include>
-          <include
-            Id="7e4ca6d5-35a8-482c-bb89-95e2be6787de">
-            <useCaseMoniker
-              Id="23b6f7ad-5357-4447-b5e0-0b43055b59af"
-              LastKnownName="Beoordelingen bekijken"
-              LastKnownLocation="ModelingProject.uml" />
-          </include>
         </additions>
       </useCase>
     </packageHasNamedElement>
@@ -624,7 +617,17 @@
         Id="23b6f7ad-5357-4447-b5e0-0b43055b59af"
         name="Beoordelingen bekijken"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5a795c60-9fc1-4462-bde9-fdfdd718f2b8">
+            <useCaseMoniker
+              Id="899c1b16-54ac-4063-a3f7-870abe4e4b9b"
+              LastKnownName="Lesrooster bekijken"
+              LastKnownLocation="ModelingProject.uml" />
+          </include>
+        </additions>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
